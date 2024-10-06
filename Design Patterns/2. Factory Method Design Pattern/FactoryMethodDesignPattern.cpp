@@ -17,30 +17,24 @@ class ILogger {
 
 class DebugLogger : public ILogger {
     public:
-        void log(string msg);
+        void log(string msg) {
+            cout << "DEBUG : " << msg << "\n";
+        }
 };
-
-void DebugLogger::log(string msg) {
-    cout << "DEBUG : " << msg << "\n";
-}
 
 class InfoLogger : public ILogger {
     public:
-        void log(string msg);
+        void log(string msg) {
+            cout << "INFO : " << msg << "\n";
+        }
 };
-
-void InfoLogger::log(string msg) {
-    cout << "INFO : " << msg << "\n";
-}
 
 class ErrorLogger : public ILogger {
     public:
-        void log(string msg);
+        void log(string msg) {
+            cout << "ERROR : " << msg << "\n";
+        }
 };
-
-void ErrorLogger::log(string msg) {
-    cout << "ERROR : " << msg << "\n";
-}
 
 class ILoggerFactory {
     public:
@@ -89,11 +83,7 @@ int main() {
     return 0;
 }
 
-
-
 /*
-
-Output:
 
 DEBUG : This is a debug log msg
 INFO : This is an info log msg

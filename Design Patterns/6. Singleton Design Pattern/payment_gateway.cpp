@@ -21,7 +21,7 @@ public:
         if (instance == nullptr)
         {
             mtx.lock();
-            if (instance == nullptr)
+            if (instance == nullptr) // Double checking
             {
                 instance = new PaymentGatewayManager();
             }

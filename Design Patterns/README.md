@@ -1,57 +1,32 @@
 # Design Patterns
 
-Design patterns are common solutions to software problems. 
+Design patterns are common solutions to software problems that have been proven over time. They help in creating maintainable, scalable and flexible software systems.
 
 ---
 
 ## Types of Design Patterns
 
-Design patterns are grouped into three main types:
+### **Creational Patterns**  
+These patterns deal with object creation mechanisms, trying to create objects in a way that suits the situation.
 
-### 1. **Creational Patterns** (For creating objects)
-These patterns simplify how objects are created and provide flexibility.
-
-- **Singleton**: Only one instance of a class exists.
-- **Factory Method**: A method decides which class to create.
-- **Builder**: Step-by-step creation of complex objects.
-- **Prototype**: Copy an existing object to create a new one.
-- **Abstract Factory**: Create families of related objects.
+- **Factory Pattern**: Creates objects without specifying the exact class to be created.
+- **Abstract Factory Pattern**: Creates families of related objects without specifying their concrete classes.
+- **Singleton Pattern**: Ensures a class has only one instance and provides a global access point to it.
+- **Builder Pattern**: Constructs complex objects step by step.
 
 ---
 
-### 2. **Structural Patterns** (For organizing code)
-These patterns help organize classes and objects for easier design.
+### **Structural Patterns**  
+These patterns deal with object composition, helping to form large structures from smaller objects.
 
-- **Adapter**: Connects incompatible interfaces to work together.
-- **Bridge**: Separates an abstraction from its implementation.
-- **Composite**: Treats a group of objects as one.
-- **Decorator**: Adds new features to objects without changing their code.
-- **Facade**: Provides a simple interface to a complex system.
-- **Flyweight**: Shares objects to save memory.
-- **Proxy**: Controls access to another object.
+- **Decorator Pattern**: Adds functionality to an object dynamically without modifying its code.
+- **Adapter Pattern**: Converts one interface to another, making incompatible interfaces work together.
+- **Facade Pattern**: Provides a simplified interface to a complex system, hiding its complexities.
 
 ---
 
-### 3. **Behavioral Patterns** (For object interaction)
-These patterns focus on how objects work together.
+### **Behavioral Patterns**  
+These patterns focus on communication between objects, managing responsibility and how objects interact with each other.
 
-- **Observer**: Notifies multiple objects when one changes.
-- **Strategy**: Switch between different algorithms easily.
-- **Command**: Encapsulates a request as an object.
-- **Chain of Responsibility**: Passes a request through a chain of handlers.
-- **State**: Changes an object's behavior based on its state.
-- **Mediator**: Centralizes communication between objects.
-- **Template Method**: Defines the basic steps of an algorithm and lets you change parts of it.
-- **Iterator**: Loops through a collection without exposing its structure.
-- **Visitor**: Adds operations to a group of objects without changing their structure.
-
----
-
-## Why Use Design Patterns?
-
-- **Reusable**: Use tried-and-tested solutions.
-- **Organized**: Keep your code clean and structured.
-- **Efficient**: Solve problems faster with less effort.
-- **Understandable**: Patterns make it easier to work in teams.
-
----
+- **Observer Pattern**: Notifies multiple objects about changes in the state of another object.
+- **Strategy Pattern**: Defines a family of algorithms, allowing them to be interchangeable at runtime.
